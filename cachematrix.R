@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This assignment is about finding inverse of the matrix and solving it 
+## only when it is necessary otherwise taking it from the stored value
+## This will result in less processing and fast work
 
-## Write a short comment describing this function
+## This function creates a matrix and making a cachematrix which can store 
+## the inverse value of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -20,7 +22,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## Write a short comment describing this function
+## This function calculates the inverse of the matrix and in case if matrix is
+## not being changed, it takes the value of the cached matrix from the 
+## above function and store it.
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
